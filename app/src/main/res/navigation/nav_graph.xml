@@ -13,7 +13,8 @@
         <action
             android:id="@+id/action_homeFragment_to_acInfoFragment"
             app:destination="@id/DetailFragment"
-            app:popUpTo="@id/homeFragment" />
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment

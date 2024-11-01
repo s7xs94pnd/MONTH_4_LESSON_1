@@ -15,5 +15,4 @@ class CallFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_call, container, false)
     }
-
 }
