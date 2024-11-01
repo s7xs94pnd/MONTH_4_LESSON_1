@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.month_4_lesson_1.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_acInfoFragment"
+            app:destination="@id/DetailFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.example.month_4_lesson_1.ui.fragments.DetailFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_ac_info" >
+        <argument
+            android:name="data"
+            app:argType="com.example.month_4_lesson_1.ui.classes.AcData" />
+    </fragment>
+    <fragment
+        android:id="@+id/CallFragment"
+        android:name="com.example.month_4_lesson_1.ui.fragments.CallFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/VCallFragment"
+        android:name="com.example.month_4_lesson_1.ui.fragments.VCallFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_v_call" />
+</navigation>
